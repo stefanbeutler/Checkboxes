@@ -1,0 +1,104 @@
+body {
+    margin:0 auto;
+    display:block;
+    width: 500px;
+    padding: 80px 0;
+    font-family: Helvetica, Arial, Droid Sans, sans-serif;
+}
+
+h1{
+    font-size:24px;
+    font-weight:bold;
+    margin: 0 0 20px 0;
+}
+
+h2{
+    font-size:16px;
+    font-weight:bold;
+    margin: 0 0 20px 0;
+}
+.container {
+    display:block;
+    margin: 10px 0;
+    background:silver;
+    padding:40px;
+    height:auto;
+    position:relative;
+    float:left;
+    border: 1px solid slategrey;
+}
+
+label {
+    display:block;
+}
+
+input[type=checkbox],
+input[type=text],
+textarea {
+    margin:10px 0;
+}
+
+input[type=text],
+textarea {
+    width:100%;
+    border: 1px solid slategrey;
+}
+
+.closebutton {
+    display:block;
+    margin:10px 0;
+    background-color:crimson;
+    padding: 5px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.closebutton:hover {
+    background-color:darkred;
+}
+.xshow {
+    /*display: none;*/
+}
+
+
+
+/* ----------------------------- */
+/* ==Animation Stuff     */
+/* ----------------------------- */
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}
+
+
+@-webkit-keyframes bounceIn {
+    0% {opacity: 0;-webkit-transform: scale(.3);}
+    50% {opacity: 1;	-webkit-transform: scale(1.015);}
+    70% {-webkit-transform: scale(.99);}
+    100% {-webkit-transform: scale(1);}
+}
+
+@-moz-keyframes bounceIn {
+    0% {opacity: 0;-moz-transform: scale(.3);}
+    50% {opacity: 1;-moz-transform: scale(1.015);}
+    70% {-moz-transform: scale(.99);}
+    100% {-moz-transform: scale(1);}
+}
+
+@-o-keyframes bounceIn {
+    0% {opacity: 0;-o-transform: scale(.3);}
+    50% {opacity: 1;-o-transform: scale(1.015);}
+    70% {-o-transform: scale(.99);}
+    100% {-o-transform: scale(1);}
+}
+
+@keyframes bounceIn {
+    0% {opacity: 0;transform: scale(.3);}
+    50% {opacity: 1;transform: scale(1.015);}
+    70% {transform: scale(.99);}
+    100% {transform: scale(1);}
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    -moz-animation-name: bounceIn;
+    -o-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
